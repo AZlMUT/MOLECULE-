@@ -1,0 +1,34 @@
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\MoleculTest.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\MoleculTest.pdb
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csprojAssemblyReference.cache
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csproj.CoreCompileInputs.cache
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csproj.CopyComplete
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.dll
+D:\Diplom\DIPLOMS\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.pdb
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\MoleculTest.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\MoleculTest.pdb
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csprojAssemblyReference.cache
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csproj.CoreCompileInputs.cache
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.csproj.CopyComplete
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.dll
+C:\DTZE Patona\DIPLOM\Molekula 2.0\MOLEKULA\MoleculTest\obj\Release\MoleculTest.pdb

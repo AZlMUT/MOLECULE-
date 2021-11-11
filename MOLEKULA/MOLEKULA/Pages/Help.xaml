@@ -1,0 +1,113 @@
+﻿<Page x:Class="MOLEKULA.Help"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MOLEKULA"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="Help">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="440" 
+                      Margin="10,10,0,0" VerticalAlignment="Top" 
+                      Width="880" VerticalScrollBarVisibility="Hidden">
+            <StackPanel>
+                <GroupBox Header="ПОМОЩЬ ПРИ РАБОТЕ С ПРОГРАММОЙ" Margin="16" Background="#FFC49AE8" FontFamily="/MOLEKULA;component/Fonts/#Roboto Black">
+                    <RichTextBox Foreground="Black" IsReadOnly="True" Focusable="False" TextChanged="RichTextBox_TextChanged" FontFamily="/MOLEKULA;component/Fonts/#Roboto">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run BaselineAlignment="Center" Text="1. Запустив приложение, пользователя приветствует главное меню программы. В верхней части навигационное меню, с помощью которого пользователь имеет возможность перейти к другим вкладкам "/>
+                                <LineBreak />
+                                <LineBreak />
+                                <Run Text="2. В навигационном меню существуют 4 вкладки: МОДЕЛИРОВАНИЕ, ТАБЛИЦА, ПОМОЩЬ, О ПРОГРАММЕ"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="3. Вкладка МОДЕЛИРОВАНИЕ предназначена для перехода на страницу моделирования молекул, чтобы пользователю было комфортнее при длительной работе с программой возвращаться сразу же на построение"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="4. Во вкладке ТАБЛИЦА находится вся переодическая таблица химических элементов имени Менделеева"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="5. Вкладка ПОМОЩЬ содержит информацию касательно использования данной программы"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="6. Во вкладке О ПРОГРАММЕ находится информация о данном программном обеспечении"/>
+                                <LineBreak/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </GroupBox>
+                <GroupBox Header="ПОМОЩЬ ПРИ РАБОТЕ С МОДЕЛИРОВАНИЕМ" Margin="16,16,16,16" Background="#FFC49AE8" FontFamily="/MOLEKULA;component/Fonts/#Roboto Black">
+                    <RichTextBox Foreground="Black" IsReadOnly="True" Focusable="False" TextChanged="RichTextBox_TextChanged" FontFamily="/MOLEKULA;component/Fonts/#Roboto">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run BaselineAlignment="Center"  Text="1. Для начала работы с моделированием, необходимо нажать соответствующую кнопку"/>
+                                <Image Source="Начать.PNG" Height="15" Width="50"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="2. Слева расположена рабочая область, на которой отображаются построены молекулярные решетки. Для того, чтобы создать новую молекулу, во-первых необходимо нажать кнопку "/>
+                                <Image Source="ДобМол.PNG" Width="90"/>
+                                <Run BaselineAlignment="Center"  Text=",после чего выбираем ее из   предложенного  списка, предоставляем ей имя, выбираем нужные атомы из  перечня , нажимаем кнопку"/>
+                                <Image Source="Доб.PNG" Width="55"/>
+                                <Run BaselineAlignment="Center"  Text=", после чего сохраняем созданную молекулу с помощью кнопки"/>
+                                <Image Source="СохрМол.PNG" Width="90"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="3. Для того, чтобы очистить содержание молекулы, выбираем нужную молекулу и кликаем на кнопку"/>
+                                <Image Source="ОчМол.PNG" Width="80"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="4. В случае, если нужно удалить определенную молекулу, выбираем нужную и нажимаем кнопку"/>
+                                <Image Source="СнимокУдМол.PNG" Width="70"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="5. Выбрав молекулу, рядом отображается перечень атомов, входящих в эту молекулу"/>
+                                <Image Source="Cgbcjr.PNG" Width="60"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="6. Выбрав среди приведенных атомов необходимый, пользователь имеет возможность изменить его определенные значения, введя необходимые данные в соответствующие поля и нажав кнопку "/>
+                                <Image Source="Изменить.PNG" Width="50"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="7. В случае, если пользователю необходимо добавить определенный атом молекулярной решетки, нужно выбрать атом из списка, установить соответствующие координаты и нажать кнопку"/>
+                                <Image Source="Доб.PNG" Width="55"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="8. Для того, чтобы создать связь между атомами, нужно выбрать определенный атом, нажать кнопку"/>
+                                <Image Source="СоздСв.PNG" Width="60"/>
+                                <Run BaselineAlignment="Center"  Text=", после чего выбрать атом, к которому будет проведена связь"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="9. Чтобы удалить связь между атомами, нужно выбрать атом, кликнуть на кнопку"/>
+                                <Image Source="УдСв.PNG" Width="60"/>
+                                <Run BaselineAlignment="Center"  Text="и соответственно cвязь удалится"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="10. Также программное приложение дает возможность удалять определенные атомы с помощью кнопки"/>
+                                <Image Source="Удал.PNG" Width="50"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="11. Выбрав или создав определенную молекулу, программа предоставляет возможность развернуть ее на весь екран приложения с помощью кнопки"/>
+                                <Image Source="Расшир.PNG" Width="30"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="12. В расширинном режиме прогрпмма позволяет редактирование местоположения атома с помощью кнопки"/>
+                                <Image Source="Редакт.PNG" Width="25"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run BaselineAlignment="Center"  Text="13. Так же есть возможность просмотреть вращение построенной молекулы с помощью кнопки"/>
+                                <Image Source="Вращ.PNG" Width="30"/>
+                                <Run BaselineAlignment="Center"  Text=", сохранение построенной молекулы в формате PNG "/>
+                                <Image Source="Сохр.PNG" Width="25"/>
+                                <Run BaselineAlignment="Center"  Text=", а так же очищение рабочей области кнопкой"/>
+                                <Image Source="Очищ.PNG" Width="30"/>
+                                <LineBreak/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

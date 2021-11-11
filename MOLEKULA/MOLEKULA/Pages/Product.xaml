@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="MOLEKULA.Product"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MOLEKULA"
+             mc:Ignorable="d"
+             d:DesignHeight="420" d:DesignWidth="900">
+    <Grid Height="420" VerticalAlignment="Top">
+        <Label Content="О ПРОГРАММЕ" HorizontalAlignment="Left" Margin="30,96,0,0" VerticalAlignment="Top" FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" Foreground="#FFFF7800"/>
+        <Label Content="——————" HorizontalAlignment="Left" Margin="30,111,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFF7800"/>
+        <ScrollViewer Margin="30,148,0,28" Width="821" ScrollViewer.VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Left">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" 
+                   FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Foreground="White" 
+                   LineHeight="20" Width="821" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <Run Text="Программа предназначена для построения различных химических структур. В данном приложении Вы сможете сами построить химические связи, добавлять, удалять и изменять расположение атомов в построенных молекулярных соединениях. "/><LineBreak/><Run/><LineBreak/><Run Text="В начале разработки "/><Run Text="программы "/><Run Text="была поставлена ​​цель исследования вычислительных методов, используемых в молекулярной динамике и применения полученных знаний для создания собственной моделирующей системы, направленной прежде всего на пользователей, с целью "/><Run Text="его "/><Run Text="заинтересованности данной темой."/><LineBreak/><Run/><LineBreak/>
+            <Run Text="Благодаря приятному интерфейсу"/>
+            <Run Text=", удобному"/>
+            <Run Text=" способу"/>
+            <Run Text=" пользования, не прихотливому"/>
+            <Run Text=" к техническим характеристикам устройства и ориентированного, прежде всего, на конечного пользователя, разработаное"/>
+            <Run Text=" приложение будет "/><Run Text="иметь "/><Run Text="широкий спрос среди учебных приложений."/>
+            <LineBreak/>
+            <LineBreak/>
+            <Run Text="Возникли вопросы либо пожелания к программному продукту?"/>
+            <LineBreak/>
+            <Run Text="Обращайтесь по номеру телефона :"/>
+            <Run Text="           +380677073926"/>
+                <LineBreak/>
+            <Run Text="Либо же пишите на почту :"/>
+            <Run Text="                             gretta.vi040901@gmail.com"/>
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

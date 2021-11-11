@@ -1,0 +1,14 @@
+﻿<Page x:Class="MOLEKULA.Pages.Mendeleev"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MOLEKULA.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="Mendeleev">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="356" Margin="0,29,0,0" VerticalAlignment="Top" Width="900" Stretch="UniformToFill" Source="/MOLEKULA;component/MyData/table.png"/>
+    </Grid>
+</Page>

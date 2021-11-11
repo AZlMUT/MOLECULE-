@@ -1,0 +1,17 @@
+﻿<Page x:Class="MOLEKULA.Pages.HomeMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MOLEKULA.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomeMain">
+
+    <Grid>
+        <Label Content="НАЗВАНИЕ : MOLECULE" HorizontalAlignment="Left" Margin="30,96,0,331" Foreground="#FFFF7800" BorderBrush="Black" FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" Width="145"/>
+        <Label Content="ПРОГРАММА &#xA;МОДЕЛИРОВАНИЯ &#xA;МОЛЕКУЛ" HorizontalAlignment="Left" Margin="30,148,0,155" FontSize="36" Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" Width="360" FontWeight="Bold"/>
+        <Label Content="——————" HorizontalAlignment="Left" Margin="30,111,0,0" VerticalAlignment="Top" Foreground="#FFFF7800" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

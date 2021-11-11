@@ -1,0 +1,339 @@
+﻿<Page x:Class="MOLEKULA.Pages.Build"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MOLEKULA.Pages" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Title="Build"
+             mc:Ignorable="d" d:DesignWidth="900" Height="470" MouseUp="Graf_MouseUp">
+
+    <Grid>
+        <Border x:Name="bord1"
+                HorizontalAlignment="Left" 
+                Height="426" Margin="20,15,0,0" 
+                VerticalAlignment="Top" Width="520"
+                Background="#FFD3C1F0" Panel.ZIndex="100"
+            CornerRadius="20" MouseUp="Graf_MouseUp">
+            <Canvas 
+                x:Name="Graf"
+                HorizontalAlignment="Center" 
+                Height="406"
+                VerticalAlignment="Center" Width="503"
+                Background="#FFD3C1F0" Margin="10" MouseMove="Graf_MouseMove" MouseLeftButtonDown="Graf_Mouse_Down" MouseUp="Graf_MouseUp"/>
+        </Border>
+        <Button Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="40" Height="34"  Name="ResizeButton"
+                    FontFamily="Microsoft Sans Serif" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Bottom" Padding="0"
+                    Cursor="Hand" Panel.ZIndex="100"
+                    Click="Resize" Margin="34,0,0,409">
+            <materialDesign:PackIcon Width="30" Height="30" Kind="Resize" />
+        </Button>
+
+        <Border BorderBrush="#4A2372" 
+                Background="#4A2372"
+                BorderThickness="1" 
+                CornerRadius="20"
+                HorizontalAlignment="Left" 
+                Height="205" Margin="565,236,0,0" 
+                VerticalAlignment="Top" Width="325"/>
+
+        <Border BorderBrush="#4A2372" 
+            Background="#4A2372"
+            BorderThickness="1" 
+            CornerRadius="20" x:Name="bord2"
+            HorizontalAlignment="Left" 
+            Height="216" Margin="565,15,0,0" 
+            VerticalAlignment="Top" Width="156"/>
+        <ListBox 
+            BorderThickness="0"
+            Background="#4A2372"
+            x:Name="Atoms" Foreground="White"
+            HorizontalAlignment="Left" 
+            Height="168" Panel.ZIndex="10"
+            VerticalAlignment="Top" Padding="0"
+            SelectionChanged="SelectAtom"
+            Width="62" Margin="653,52,0,0" 
+            ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+            ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        </ListBox>
+
+
+
+
+        <TextBox x:Name="AtomX"
+            HorizontalAlignment="Left" 
+            Height="23" Margin="665,312,0,0" 
+            TextWrapping="Wrap" Text="" 
+            VerticalAlignment="Top" 
+            Width="72" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" 
+            TextChanged="Atom_TextChanged" Foreground="White"/>
+        <TextBox x:Name="AtomY"
+            HorizontalAlignment="Left" 
+            Height="23" Margin="665,340,0,0" 
+            TextWrapping="Wrap" Text="" 
+            TextChanged="Atom_TextChanged"
+            VerticalAlignment="Top" Width="72" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Foreground="White"/>
+        <TextBox x:Name="AtomZ"
+            HorizontalAlignment="Left" 
+            Height="23" Margin="665,368,0,0" 
+            TextWrapping="Wrap" Text="" 
+            TextChanged="Atom_TextChanged"
+            VerticalAlignment="Top" Width="72" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Foreground="White"/>
+        <ComboBox x:Name="AtomName"
+            HorizontalAlignment="Left" 
+            Margin="665,284,0,0" IsEditable="True"
+            VerticalAlignment="Top" 
+            materialDesign:HintAssist.Hint="Поиск"
+            materialDesign:HintAssist.HintOpacity=".26"
+            Width="72" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Height="23" Foreground="White">
+        </ComboBox>
+        <Button
+            x:Name="Add_Atom"
+            Width="138" Height="23" 
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" 
+                Click="AddAtom_Click"
+            Margin="743,0,0,135" Padding="0">
+            <TextBlock Text="Добавить"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <Button
+            x:Name="Dell_Atom"
+            Width="138" Height="23" 
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="DellAtom_Click"
+            Margin="743,0,0,107" Padding="0">
+            <TextBlock Text="Удалить"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Margin="13,0,13,3"/>
+        </Button>
+        <Button 
+            x:Name="StartBuild_Copy5"
+            Width="150" Height="28" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="Dell_Molekula"
+            Margin="734,0,0,322" Panel.ZIndex="1" Padding="0">
+            <TextBlock Text="Удалить молекулу"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <Button Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="40" Height="34" Name="RotateButt"
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Panel.ZIndex="100"
+            Click="Play" Padding="0"
+            Margin="484,0,0,47">
+            <materialDesign:PackIcon Width="30" Height="30" Kind="AtomVariant" />
+        </Button>
+        <Slider 
+            x:Name="LoadAnimation"
+            HorizontalAlignment="Left" 
+            Height="16" Margin="360,202,0,0" 
+            VerticalAlignment="Top" 
+            Maximum="1800" Width="388"
+            RenderTransformOrigin="0.5,0.5"
+            ValueChanged="PlayAnimation"
+            Visibility="Hidden">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Slider 
+            x:Name="SetAtomIter"
+            HorizontalAlignment="Left" 
+            Height="20" Margin="665,396,0,0" 
+            VerticalAlignment="Top" 
+            Minimum="0"
+            Maximum="360" Width="72"
+            ValueChanged="SetAtomIters" RenderTransformOrigin="0.5,0.5" Visibility="Visible">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.16"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Label Content="Атом" HorizontalAlignment="Left" Height="20" Margin="573,287,0,0" VerticalAlignment="Top" Width="82" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Roboto" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFF7800">
+        </Label>
+        <Label Content="Координата Х" HorizontalAlignment="Left" Height="23" Margin="573,312,0,0" VerticalAlignment="Top" Width="82" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Roboto" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="#FFFF7800"/>
+        <Label Content="Координата Y" HorizontalAlignment="Left" Height="23" Margin="573,340,0,0" VerticalAlignment="Top" Width="82" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Roboto" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="#FFFF7800"/>
+        <Label Content="Координата Z" HorizontalAlignment="Left" Height="23" Margin="573,368,0,0" VerticalAlignment="Top" Width="82" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Roboto" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="#FFFF7800"/>
+        <Label Content="МАНИПУЛЯЦИИ НАД АТОМОМ" HorizontalAlignment="Left" Height="24" Margin="573,245,0,0" VerticalAlignment="Top" Width="309" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Montserrat" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFF7800" BorderBrush="#FFFF7800" BorderThickness="0,0,0,3"/>
+        <Button
+            x:Name="Edit_Atom"
+            Width="139" Height="23" 
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" 
+            Click="Edited_Atom"
+            Margin="742,0,0,163" Panel.ZIndex="1" Padding="0">
+            <TextBlock Text="Изменить"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <Border BorderBrush="#4A2372" 
+            Background="#4A2372"
+            BorderThickness="1" 
+            CornerRadius="20" x:Name="bord3"
+            HorizontalAlignment="Left" 
+            Height="216" Margin="726,15,0,0" 
+            VerticalAlignment="Top" Width="164"/>
+        <Label Content="МОЛЕКУЛА" HorizontalAlignment="Left" Height="24" Margin="734,23,0,0" VerticalAlignment="Top" Width="150" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Montserrat" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFF7800" BorderBrush="#FFFF7800" BorderThickness="0,0,0,3"/>
+        <Button
+            x:Name="Add_molekul"
+            Width="150" Height="27" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="Add_Molekula"
+            Margin="734,0,0,357" Panel.ZIndex="1" Padding="0">
+            <TextBlock Text="Добавить молекулу"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <Button
+            x:Name="StartBuild_Copy6"
+            Width="150" Height="27" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="Save_Molekula"
+            Margin="734,0,0,288" Panel.ZIndex="1" Padding="0">
+            <TextBlock Text="Сохранить молекулу"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium" Margin="4,2,0,2"/>
+        </Button>
+        <Button 
+            x:Name="StartBuild_Copy7"
+            Width="150" Height="27" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="Clear_Molekula"
+            Margin="734,0,0,254" Panel.ZIndex="1" Padding="0">
+            <TextBlock Text="Очистить молекулу"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <ListBox 
+            BorderThickness="0"
+            Background="#4A2372"
+            x:Name="Molekuls" Foreground="White"
+            HorizontalAlignment="Left" 
+            Height="168" Panel.ZIndex="10"
+            VerticalAlignment="Top" Padding="0"
+            SelectionChanged="SelectMolekuls"
+            Width="75" Margin="573,52,0,0" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+        <TextBlock x:Name="Show_Name" Panel.ZIndex="1"
+            HorizontalAlignment="Left" 
+            Height="27" Margin="734,52,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="150" Padding="0"
+            TextAlignment="Center" 
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            FontSize="20" Foreground="White"/>
+        <TextBox
+            x:Name="Molekula_Name" Panel.ZIndex="2"
+            HorizontalAlignment="Left" 
+            Height="27" Margin="734,52,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="150" Padding="0"
+            TextAlignment="Center" Background="Transparent"
+            FontFamily="/MOLEKULA;component/Fonts/#Roboto Black" 
+            FontSize="20" Foreground="White" TextChanged="Molekula_Name_TextChanged"/>
+        <Button Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="40" Height="34" Name="ClearButt"
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Panel.ZIndex="100"
+            Click="Clear_Canvas" Padding="0"
+            Margin="439,0,0,47">
+            <materialDesign:PackIcon Width="30" Height="30" Kind="LayersOff" />
+        </Button>
+        <Label Content="Вращение" HorizontalAlignment="Left" Height="23" Margin="573,396,0,0" VerticalAlignment="Top" Width="82" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Roboto" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFF7800"/>
+        <Button
+            x:Name="Create_Connect_Copy" Height="23" 
+            FontFamily="Microsoft Sans Serif" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="DeleteConnect"
+            Margin="743,0,19,51" Padding="0">
+            <TextBlock Text="Удалить связь "
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+
+        <ToggleButton
+            Style="{StaticResource MaterialDesignActionAccentToggleButton}"
+            ToolTip="MaterialDesignActionToggleButton"
+            Width="40" Height="34" x:Name="EditMaket"
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" IsEnabled="False"
+            VerticalAlignment="Bottom" IsEnabledChanged="EditFalse"
+            Cursor="Hand" Panel.ZIndex="105"
+            Click="EditCanvas" Padding="0"
+            Margin="349,0,0,47" Checked="EditMaket_Checked">
+            <materialDesign:PackIcon Width="30" Height="30" Kind="Pencil" />
+        </ToggleButton>
+        <Button
+            x:Name="Create_Connect" Height="23" 
+            FontFamily="Microsoft Sans Serif" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Click="CreateConnect"
+            Margin="743,0,19,79" Padding="0">
+            <TextBlock Text="Создать связь "
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                Foreground="White" FontFamily="/MOLEKULA;component/Fonts/#Roboto Medium"/>
+        </Button>
+        <Button Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="40" Height="34" x:Name="SaveImg"
+            FontFamily="Microsoft Sans Serif" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            Cursor="Hand" Panel.ZIndex="100"
+            Click="SaveToImage" Padding="0"
+            Margin="394,0,0,47">
+            <materialDesign:PackIcon Width="30" Height="30" Kind="ContentSave" />
+        </Button>
+        <Label Content="СПИСОК" HorizontalAlignment="Left" Height="24" Margin="571,23,0,0" VerticalAlignment="Top" Width="144" Padding="0" FontFamily="/MOLEKULA;component/Fonts/#Montserrat" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFF7800" BorderBrush="#FFFF7800" BorderThickness="0,0,0,3"/>
+    </Grid>
+</Page>
